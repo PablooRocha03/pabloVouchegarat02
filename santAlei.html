@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Ilha de Santo Aleixo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Espaçamento no topo */
+        body {
+            margin-top: 20px; /* Espaçamento desejado em pixels */
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <div class="sidebar" id="sidebar">
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Lugares mais procurados</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Ilha de Santo Aleixo</h1>
+                    </header>
+
+                    <h2>Descrição</h2>
+                    <p>A poucos quilômetros da praia de Porto de Galinhas, encontra-se um verdadeiro tesouro escondido: a Ilha de Santo Aleixo. Com suas águas cristalinas e uma beleza intocada, esse pedaço do paraíso é um destino imperdível para quem busca tranquilidade, natureza exuberante e momentos de pura desconexão.</p>
+                    <p>A Ilha de Santo Aleixo, com cerca de 30 hectares, já foi palco de disputas entre colonizadores europeus. Sua infraestrutura turística se resume a quatro barracas pé na areia. Ela faz parte da Área de Preservação Ambiental de Guadalupe, a ilha é privada e está em processo de inventário. Localizada no litoral sul de Pernambuco, seu acesso é possível somente por meio de embarcações que partem da Praia de Sirinhaém, próxima a Porto de Galinhas. Ao desembarcar, os visitantes são recebidos por um cenário deslumbrante, com praias de areias douradas, coqueirais e um mar em tons de azul e verde que hipnotizam qualquer pessoa.</p>
+                    <hr class="major" />
+                </section>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            // Adicionei a função toggleMenu
+            function toggleMenu() {
+                var sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('active');
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
