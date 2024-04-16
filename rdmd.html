@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Rua da moeda</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Estilo para o texto da descrição */
+        .main p {
+            font-size: 16px; /* Tamanho do texto */
+            font-family: Arial, sans-serif; /* Estilo de fonte */
+            line-height: 1.6em; /* Espaçamento entre linhas */
+            color: black; /* Cor do texto */
+        }
+
+        /* Espaçamento no topo */
+        body {
+            margin-top: 20px; /* Espaçamento desejado em pixels */
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <div class="sidebar" id="sidebar">
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Lugares mais procurados</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            <!-- Content -->
+            <section>
+                <header class="main">
+                    <h1>Rua da Moeda</h1>
+                    <h2>Descrição</h2>
+                    <p>A Rua da Moeda, localizada nas proximidades do Shopping Paço Alfândega e da Igreja Madre de Deus, destaca-se por sua vocação boêmia, com bares e restaurantes que varam as madrugadas com as portas abertas. O que nem todo mundo sabe, no entanto, é que a via tem este nome porque era lá que funcionava a antiga Casa da Moeda, instalada no local pelos holandeses, ainda em 1645, para pagamento dos soldados e funcionários do governo holandês.</p>
+                    <p>Antro da boemia do Recife Antigo, a Rua da Moeda tem séculos de existência e guarda um pouco da história das movimentações financeiras de Pernambuco. Em meados do século 17, a via se chamava Rua Maria Roiz (ou Maria Rodrigues).</p>
+                    <p>Hoje, a boêmia é a principal característica da Moeda. Além de bares com mesas na rua, o trecho também abriga uma estátua do músico Chico Science e espaços culturais como a Arte Plural Galeria.</p>
+                    <hr class="major" />
+                </header>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Adicionei a função toggleMenu
+        function toggleMenu() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

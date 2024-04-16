@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>VouChegar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#49bf9d">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <link rel="manifest" href="manifest.json">
+
+    
+    <style>
+        #main {
+            margin-top: 50px; /* Adiciona uma margem no topo */
+        }
+        .sidebar {
+            margin-top: 50px; /* Adiciona uma margem no topo */
+        }
+    </style>
+
+
+
+
+</head>
+<body class="is-preload">
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <h1>Menu</h1>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">Lugares mais procurados</a></li>
+        <li><a href="#">Configurações</a></li>
+    </ul>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+    <!-- Conteúdo original -->
+    <!-- One -->
+    <section id="one">
+        <header class="major">
+            <h2>Vou Chegar, um guia e comunidade de turismo,<br />
+                que vai fazer toda a diferença na sua viagem.</h2>
+        </header>
+        <p>Este site é um guia turístico online que incentiva uma comunidade de moradores locais ou visitantes a compartilhar informações e experiências sobre os pontos turísticos da região. Isso proporciona acesso seguro e honesto aos locais, melhorando as experiências tanto para visitantes novos quanto para os moradores da região.</p>
+        <ul class="actions">
+        </ul>
+    </section>
+
+    <!-- Two -->
+    <section id="two">
+        <h2>Mais visitados</h2>
+        <div class="row">
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/01.jpg" class="image fit thumb"><img src="https://brasilturpasseios.com.br/wp-content/uploads/2020/08/Ilha-de-Santo-Aleixo.jpeg" alt="" /></a>
+                <h3>Ilha de Santo Aleixo</h3>
+                <ul class="actions">
+                    <li><a href="santAlei.html" class="button">Saiba Mais</a></li>
+                </ul>
+            </article>
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/03.jpg" class="image fit thumb"><img src="https://www.segueviagem.com.br/wp-content/uploads/2016/07/shutterstock_396106621-1536x1027.jpg" alt="" /></a>
+                <h3>Alto da Sé</h3>
+                <ul class="actions">
+                    <li><a href="altoSe.html" class="button">Saiba Mais</a></li>
+                </ul>
+            </article>
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/04.jpg" class="image fit thumb"><img src="https://2.bp.blogspot.com/--PysKVFczcM/WTS2DgeJkcI/AAAAAAAAABY/-axTmFT_A2gOtnaXtXhExrPVbfC52g2CACLcB/s1600/12500628275_48d419afd6_b.jpg" alt="" /></a>
+                <h3>Buraco da Véia</h3>
+                <ul class="actions">
+                    <li><a href="veia.html" class="button">Saiba Mais</a></li>
+                </ul>
+            </article>
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/05.jpg" class="image fit thumb"><img src="https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2021/11/whatsapp-image-2021-11-01-at-222819.jpeg" alt="" /></a>
+                <h3>Rua da Moeda</h3>
+                <ul class="actions">
+                    <li><a href="rdmd.html" class="button">Saiba Mais</a></li>
+                </ul>
+            </article>
+            <article class="col-6 col-12-xsmall work-item">
+                <a href="images/fulls/06.jpg" class="image fit thumb"><img src="https://i.ytimg.com/vi/VORhOLUeDaQ/maxresdefault.jpg" alt="" /></a>
+                <h3>Pagode do Didi</h3>
+                <ul class="actions">
+                    <li><a href="pagDidi.html" class="button">Saiba Mais</a></li>
+                </ul>
+            </article>
+            <!-- Adicione mais artigos conforme necessário -->
+        </div>
+    </section>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/serviceworke.js').then(function(registration) {
+  // Registration was successful
+  console.log('ServiceWorker registration successful');
+}, function(err) {
+  // Registration failed
+  console.log('ServiceWorker registration failed: ', err);
+});
+});
+}
+</script>
+
+<script>
+
+    function toggleMenu() {
+        var sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

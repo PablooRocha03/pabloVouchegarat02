@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Alto da Sé</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <div class="sidebar" id="sidebar">
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Lugares mais procurados</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner" style="margin-top: 50px;"> <!-- Adiciona uma margem no topo -->
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Alto da Sé</h1>
+                    </header>
+
+                    <header class="major">
+                        <h2>Descrição</h2>
+                    </header>
+
+                    <p>O Alto da Sé é uma área de grande interesse turístico, histórico e cultural do centro de Olinda, cidade da Grande Recife que é patrimônio da humanidade pela UNESCO desde 1982.</p>
+                    <p>Formado por uma movimentada praça que mantém a mais tradicional feira da cidade, mirantes que proporcionam vistas fantásticas e uma das igrejas mais antigas no Brasil, foi nesta colina que em 1535, Duarte Coelho fundou a cidade, justamente por ser um lugar onde se avista a terra e o mar.</p>
+                    <hr class="major" />
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

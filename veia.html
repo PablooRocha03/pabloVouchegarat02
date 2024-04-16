@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Praia do Buraco da Veia</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Espaçamento no topo */
+        body {
+            margin-top: 20px; /* Espaçamento desejado em pixels */
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <div class="sidebar" id="sidebar">
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Lugares mais procurados</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Content -->
+                <section>
+
+                    <h1>Praia do Buraco da Veia</h1>
+
+                    <span class="image main"><img src="images/shoppingBoavistaP.png" alt="" /></span>
+                    <h3>Descrição</h3>
+                    <p>A praia mais conhecida do Recife é Boa Viagem e por ser tão famosinha, está sempre repleta de turistas. Se você vem passar uns dias por aqui e quer pegar uma praia mas não curte muito a aglomeração, então aproveite a Praia do Buraco da Velha. </p>
+                    <p>O Buraco da Velha é um pequeno paraíso de águas calmas e areia quente. A praia é um verdadeiro refúgio, com piscinas naturais e tranquilidade para tomar um refrescante banho de mar. Vale destacar que um grande arrecife protege as piscinas naturais dos tubarões e das ondas, permitindo que os banhistas se sintam mais seguros e aproveitem a praia tranquilamente. Bastante tranquila e pouco conhecida, é uma excelente opção para crianças, que podem brincar à vontade na areia e na água, para adultos que não querem ficar na aglomeração e para quem já conhece as praias do Recife e deseja conhecer uma opção diferente. </p>
+                    <hr class="major" />
+                </section>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            // Adicionei a função toggleMenu
+            function toggleMenu() {
+                var sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('active');
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
